@@ -98,31 +98,68 @@
           class="font-serif flex justify-center items-center gap-6 mb-4 text-gray-800"
         >
           <li>
-            <a class="border-b-[0.5px]" href="#">Holiday Gifting</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+            >
+              Holiday Gifting
+            </a>
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">New Arrivals</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >New Arrivals</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Best-Sellers</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Best-Sellers</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Clothing</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Clothing</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Tops & Sweaters</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Tops & Sweaters</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Pants & Jeans</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Pants & Jeans</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Outewear</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Outewear</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Shoes & Bags</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Shoes & Bags</a
+            >
           </li>
           <li>
-            <a class="border-b-[0.5px]" href="#">Sales</a>
+            <a
+              class="border-b-2 border-transparent transition-all duration-300 ease-out hover:border-black"
+              href="#"
+              >Sales</a
+            >
           </li>
         </ul>
       </nav>
@@ -152,7 +189,7 @@
         </div>
       </section>
       <section class="shop-category container mt-12 w-full">
-        <h2 class="text-center my-12 font-playfair text-2xl underline">
+        <h2 class="text-center my-12 font-playfair text-2xl">
           Shop By category
         </h2>
         <div
@@ -232,7 +269,7 @@
           <div
             class="img-text absolute inset-0 flex flex-col items-center justify-center"
           >
-            <pc class="text-white uppercase tracking-wide">Best-Sellers</pc>
+            <p class="text-white uppercase tracking-wide">Best-Sellers</p>
             <a class="px-12 py-1.5 mt-2 bg-white uppercase" href="#"
               >Shop your favorites</a
             >
@@ -281,7 +318,7 @@
           </div>
         </div>
       </section>
-      <section class="favorites mt-12 container w-full relative font-playfair">
+      <section class="favorites mt-12 container w-full relative font-playfair overflow-hidden">
         <div class="flex items-center justify-center flex-col text-center">
           <h2 class="text-2xl py-4">Everlane Favorites</h2>
           <p>
@@ -290,7 +327,7 @@
         </div>
 
         <div
-          class="carousel-container mt-8 flex overflow-x-auto snap-x snap-mandatory gap-4"
+          class="carousel-container mt-8 flex transition-transform duration-500   gap-4"
         >
           <div
             class="favorite-card flex-shrink-0 w-1/4 snap-center z-10 cursor-pointer"
@@ -423,12 +460,12 @@
           class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 z-20"
         >
           <button
-            class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
+           id="button-previous" class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
           >
             &lt;
           </button>
           <button
-            class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
+           id="button-next"  class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
           >
             &gt;
           </button>
@@ -511,78 +548,192 @@
       </section>
       <hr class="border-t-2 border-gray-200 my-4 container mt-12" />
       <section class="everlane-for-you font-playfair pt-2">
-  <div class="for-you-container text-center py-4">
-    <h2 class="text-4xl py-2 ">Everlane On You</h2>
-    <p>
-      Share your latest look with #Everlane OnYou for a chance to be
-      featured.
-    </p>
-    <a href="#" class="underline hover:font-medium">Add your photo</a>
+        <div class="for-you-container text-center py-4">
+          <h2 class="text-4xl py-2">Everlane On You</h2>
+          <p>
+            Share your latest look with #Everlane OnYou for a chance to be
+            featured.
+          </p>
+          <a href="#" class="underline hover:font-medium">Add your photo</a>
 
-    <div class="for-you-items flex flex-wrap justify-center items-center gap-4 py-2">
-      
-     
-      <div class="for-you-item max-w-sm relative">
-        <a href="#">
-          <img class="h-[300px]" src="src/assets/images/you.jpg" alt="Usuário usando Everlane" />
-          <div class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl ">
-            <img src="src/assets/icons/icons8-cart-24.png" alt="Ícone de carrinho" />
+          <div
+            class="for-you-items flex flex-wrap justify-center items-center gap-4 py-2"
+          >
+            <div class="for-you-item max-w-sm relative">
+              <a href="#">
+                <img
+                  class="h-[300px]"
+                  src="src/assets/images/you.jpg"
+                  alt="Usuário usando Everlane"
+                />
+                <div
+                  class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl"
+                >
+                  <img
+                    src="src/assets/icons/icons8-cart-24.png"
+                    alt="Ícone de carrinho"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="for-you-item max-w-sm relative">
+              <a href="#">
+                <img
+                  class="h-[300px]"
+                  src="src/assets/images/you2.jpg"
+                  alt="Usuário usando Everlane"
+                />
+                <div
+                  class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl"
+                >
+                  <img
+                    src="src/assets/icons/icons8-cart-24.png"
+                    alt="Ícone de carrinho"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="for-you-item max-w-sm relative">
+              <a href="#">
+                <img
+                  class="h-[300px]"
+                  src="src/assets/images/you3.jpg"
+                  alt="Usuário usando Everlane"
+                />
+                <div
+                  class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl"
+                >
+                  <img
+                    src="src/assets/icons/icons8-cart-24.png"
+                    alt="Ícone de carrinho"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="for-you-item max-w-sm relative">
+              <a href="#">
+                <img
+                  class="h-[300px]"
+                  src="src/assets/images/you4.jpg"
+                  alt="Usuário usando Everlane"
+                />
+                <div
+                  class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl"
+                >
+                  <img
+                    src="src/assets/icons/icons8-cart-24.png"
+                    alt="Ícone de carrinho"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="for-you-item max-w-sm relative">
+              <a href="#">
+                <img
+                  class="h-[300px]"
+                  src="src/assets/images/you5.jpg"
+                  alt="Usuário usando Everlane"
+                />
+                <div
+                  class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl"
+                >
+                  <img class="scale-100 hover:scale-105 transition-transform duration-300"
+                    src="src/assets/icons/icons8-cart-24.png"
+                    alt="Ícone de carrinho"
+                  />
+                </div>
+              </a>
+            </div>
           </div>
-        </a>
-      </div>
-      <div class="for-you-item max-w-sm relative">
-        <a href="#">
-          <img class="h-[300px]" src="src/assets/images/you2.jpg" alt="Usuário usando Everlane" />
-          <div class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl ">
-            <img src="src/assets/icons/icons8-cart-24.png" alt="Ícone de carrinho" />
+          <div
+            class="information-you flex justify-center items-center gap-8 mt-12"
+          >
+            <div
+              class="box flex flex-col items-center justify-center border-2 border-gray-400 bg-white rounded-2xl w-96 h-[200px]"
+            >
+              <img src="src/assets/images/box.png" alt="" />
+              <h3 class="font-medium text-lg">Complimentary Shipping</h3>
+              <p>Enjoy free shipping on U.S. orders over $100</p>
+            </div>
+            <div
+              class="recycle flex flex-col items-center justify-center border-2 border-gray-400 bg-white rounded-2xl w-96 h-[200px]"
+            >
+              <img src="src/assets/images/recycle.png" alt="" />
+              <h3 class="font-medium text-lg">Consciously Crafted</h3>
+              <p>design with you and the planet in mind</p>
+            </div>
+            <div
+              class="point flex flex-col items-center justify-center border-2 border-gray-400 bg-white rounded-2xl w-96 h-[200px]"
+            >
+              <img src="src/assets/images/point.png" alt="" />
+              <h3 class="font-medium text-lg">Come say hi</h3>
+              <p>We have 11 stores across the U.S.</p>
+            </div>
           </div>
-        </a>
-      </div>
-      <div class="for-you-item max-w-sm relative">
-        <a href="#">
-          <img class="h-[300px]" src="src/assets/images/you3.jpg" alt="Usuário usando Everlane" />
-          <div class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl ">
-            <img src="src/assets/icons/icons8-cart-24.png" alt="Ícone de carrinho" />
-          </div>
-        </a>
-      </div>
-      <div class="for-you-item max-w-sm relative">
-        <a href="#">
-          <img class="h-[300px]" src="src/assets/images/you4.jpg" alt="Usuário usando Everlane" />
-          <div class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl ">
-            <img src="src/assets/icons/icons8-cart-24.png" alt="Ícone de carrinho" />
-          </div>
-        </a>
-      </div>
-      <div class="for-you-item max-w-sm relative">
-        <a href="#">
-          <img class="h-[300px]" src="src/assets/images/you5.jpg" alt="Usuário usando Everlane" />
-          <div class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl ">
-            <img src="src/assets/icons/icons8-cart-24.png" alt="Ícone de carrinho" />
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="information-you flex justify-center items-center gap-8 mt-12">
-      <div class="box flex flex-col items-center justify-center border-2 border-gray-400  bg-white rounded-2xl w-96 h-[200px] ">
-        <img src="src/assets/images/box.png" alt="">
-        <h3 class="font-medium text-lg">Complimentary Shipping</h3>
-        <p>Enjoy free shipping on U.S. orders over $100</p>
-      </div> 
-      <div class="recycle  flex flex-col items-center justify-center border-2 border-gray-400  bg-white rounded-2xl w-96 h-[200px]">
-        <img src="src/assets/images/recycle.png" alt="">
-        <h3 class="font-medium text-lg">Consciously Crafted</h3>
-        <p>design with you and the planet in mind</p>
-      </div>
-      <div class="point flex flex-col items-center justify-center border-2 border-gray-400  bg-white rounded-2xl w-96 h-[200px]">
-        <img src="src/assets/images/point.png" alt="">
-        <h3 class="font-medium text-lg">Come say hi</h3>
-        <p>We have 11 stores across the U.S.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+        </div>
+      </section>
     </main>
+    <footer class="bg-gray-300 text-gray-500 p-6">
+      <div class="container-footer container flex flex-wrap justify-evenly">
+        <div class="account">
+          <h3 class="text-black text-lg font-medium">Account</h3>
+          <p>Log in</p>
+          <p>Sign Up</p>
+          <p>Redeem a Gift Card</p>
+        </div>
+        <div class="Company">
+          <p class="text-black text-lg font-medium">About</p>
+          <p>Environmental Initiatives</p>
+          <p>Factories</p>
+          <p>DEI</p>
+          <p>Careers</p>
+          <p>International</p>
+          <p>Accessibility</p>
+        </div>
+        <div class="Get-help">
+          <h3 class="text-black text-lg font-medium">Help Center</h3>
+          <p>Return Policy</p>
+          <p>Shipping Info</p>
+          <p>Bulk Orders</p>
+        </div>
+        <div class="Connect">
+          <h3 class="text-black text-lg font-medium">Connect</h3>
+          <p>Facebook</p>
+          <p>Instagram</p>
+          <p>Twitter</p>
+          <p>Affiliates</p>
+          <p>Our stores</p>
+        </div>
+        <div class="email-input bg-white flex h-12 w-96 relative">
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="flex-1 px-2 outline-none"
+          />
+
+          <div
+            class="absolute bg-black w-16 h-full right-0 top-0 flex items-center justify-center text-white cursor-pointer"
+          >
+            <a href="#"
+              ><img src="src/assets/icons/icons8-flecha-24.png" alt="" />
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="informations flex flex-wrap justify-center gap-4 w-full mt-6 border-t border-gray-400 pt-4"
+        >
+          <p>Privacy Policy</p>
+          <p>Terms of Service</p>
+          <p>Do Not Sell or Share My Personal Information</p>
+          <p>CS Supply Chain Transparency</p>
+          <p>Vendor Code of Conduct</p>
+          <p>Sitemap Pages</p>
+          <p>Sitemap Products</p>
+        </div>
+        <p class="mt-2">© 2023 All Rights Reserved</p>
+      </div>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>
