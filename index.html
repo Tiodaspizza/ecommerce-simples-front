@@ -318,7 +318,9 @@
           </div>
         </div>
       </section>
-      <section class="favorites mt-12 container w-full relative font-playfair overflow-hidden">
+      <section
+        class="favorites mt-12 container w-full relative font-playfair overflow-hidden"
+      >
         <div class="flex items-center justify-center flex-col text-center">
           <h2 class="text-2xl py-4">Everlane Favorites</h2>
           <p>
@@ -327,7 +329,7 @@
         </div>
 
         <div
-          class="carousel-container mt-8 flex transition-transform duration-500   gap-4"
+          class="carousel-container mt-8 flex transition-transform duration-500 gap-4"
         >
           <div
             class="favorite-card flex-shrink-0 w-1/4 snap-center z-10 cursor-pointer"
@@ -460,20 +462,22 @@
           class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 z-20"
         >
           <button
-           id="button-previous" class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
+            id="button-previous"
+            class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
           >
             &lt;
           </button>
           <button
-           id="button-next"  class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
+            id="button-next"
+            class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
           >
             &gt;
           </button>
         </div>
       </section>
-      <section class="talking container flex justify-center mt-12 relative">
-        <div class="carousel-talking flex flex-row">
-          <div class="talking-item flex flex-row items-center gap-8">
+      <section class="talking container flex justify-center mt-12 relative   ">
+        <div class="carousel-talking-wrapper flex flex-row items-center gap-8  overflow-hidden transition-all duration-500 ease-in-out">
+          <div class="carousel-taking-cards flex flex-row active ">
             <div class="talking-text text-balance max-w-lg">
               <p class="py-2">people are talking</p>
               <p class="flex space-x-1">
@@ -491,28 +495,90 @@
                 -- JonSnSF, The Heavyweight Overshirt
               </p>
             </div>
-
-            <div class="talking-img max-w-sm">
-              <a href="#">
-                <img
-                  height="200"
-                  width="600"
-                  src="src/assets/images/talking.png"
-                  alt="Imagem depoimento"
-                />
-              </a>
-            </div>
+          
+          <div class="talking-img max-w-sm">
+            <a href="#">
+              <img
+                height="200"
+                width="600"
+                src="src/assets/images/talking.png"
+                alt="Imagem depoimento"
+              />
+            </a>
           </div>
+          </div>
+          <div class="carousel-taking-cards flex flex-row hidden ">
+            <div class="talking-text text-balance max-w-lg">
+              <p class="py-2">people are talking</p>
+              <p class="flex space-x-1">
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+              </p>
+              <h2 class="mt-2 text-lg font-semibold">
+                “Love this shirt! Fits perfectly and the fabric is thick without
+                being stiff.”
+              </h2>
+              <p class="mt-2 text-sm text-gray-500">
+                -- JonSnSF, The Heavyweight Overshirt
+              </p>
+            </div>
+          
+          <div class="talking-img max-w-sm">
+            <a href="#">
+              <img
+                height="200"
+                width="600"
+                src="src/assets/images/unnamed.png"
+                alt="Imagem depoimento"
+              />
+            </a>
+          </div>
+          </div>
+          <div class="carousel-taking-cards flex flex-row hidden ">
+            <div class="talking-text text-balance max-w-lg">
+              <p class="py-2">people are talking</p>
+              <p class="flex space-x-1">
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+                <img src="src/assets/icons/icons8-star-30.png" alt="Estrela" />
+              </p>
+              <h2 class="mt-2 text-lg font-semibold">
+                “Love this shirt! Fits perfectly and the fabric is thick without
+                being stiff.”
+              </h2>
+              <p class="mt-2 text-sm text-gray-500">
+                -- JonSnSF, The Heavyweight Overshirt
+              </p>
+            </div>
+          
+          <div class="talking-img max-w-sm">
+            <a href="#">
+              <img
+                height="200"
+                width="600"
+                src="src/assets/images/dmitry-ganin-SlWNt1py6Zc-unsplash.jpg"
+                alt="Imagem depoimento"
+              />
+            </a>
+          </div>
+          </div>
+        
         </div>
+
         <div
           class="absolute inset-y-0 left-0 right-0 flex items-center justify-between px-4 z-20"
         >
-          <button
+          <button id="btnPrevious-depoiment-carousel"
             class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
           >
             &lt;
           </button>
-          <button
+          <button id="btnNext-depoiment-carousel"
             class="bg-gray-800 text-white p-2 rounded-full opacity-70 hover:opacity-100"
           >
             &gt;
@@ -637,7 +703,8 @@
                 <div
                   class="icon-cart absolute top-7 right-7 bg-gray-200 p-1 rounded-2xl"
                 >
-                  <img class="scale-100 hover:scale-105 transition-transform duration-300"
+                  <img
+                    class="scale-100 hover:scale-105"
                     src="src/assets/icons/icons8-cart-24.png"
                     alt="Ícone de carrinho"
                   />
